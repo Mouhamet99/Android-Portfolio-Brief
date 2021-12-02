@@ -30,6 +30,7 @@ android {
 dependencies {
     //Glide  libraries
     implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
     // Material Card View dependancy
     implementation "androidx.cardview:cardview:1.0.0"

@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/simplon/AndroidStudioProjects/AndroidPortfolioBrief/app/src/main/res/drawable/rounded_icon.xml" value="0.2125" />
         <entry key="..\:/Users/simplon/AndroidStudioProjects/AndroidPortfolioBrief/app/src/main/res/layout/activity_display_message.xml" value="0.22" />
-        <entry key="..\:/Users/simplon/AndroidStudioProjects/AndroidPortfolioBrief/app/src/main/res/layout/activity_main.xml" value="0.6" />
+        <entry key="..\:/Users/simplon/AndroidStudioProjects/AndroidPortfolioBrief/app/src/main/res/layout/activity_main.xml" value="0.20971563981042654" />
+        <entry key="..\:/Users/simplon/AndroidStudioProjects/AndroidPortfolioBrief/app/src/main/res/layout/fragment_home_section.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/simplon/AndroidStudioProjects/AndroidPortfolioBrief/app/src/main/res/layout/item_menu.xml" value="0.3333333333333333" />
       </map>
     </option>
   </component>
