@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Android Portfolio Brief</string>
+    <string name="home">Home</string>
+    <string name="about_me">About me</string>
+    <string name="course">Course</string>
+    <string name="contact">Contact</string>
+    <string name="works">Works</string>
+    <string name="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi atque, commodi dolores incidunt laboriosam maxime necessitatibus, nostrum numquam quis quos vero voluptas! Beatae numquam perspiciatis quia voluptatem voluptatum! Dolorum, nostrum!</string>
+</resources>
