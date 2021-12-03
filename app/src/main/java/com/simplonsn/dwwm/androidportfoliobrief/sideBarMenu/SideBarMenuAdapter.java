@@ -1,6 +1,5 @@
 package com.simplonsn.dwwm.androidportfoliobrief.sideBarMenu;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,10 +24,10 @@ public class SideBarMenuAdapter extends RecyclerView.Adapter<SideBarMenuAdapter.
 
 
 
-  /*  public void setDataSet(List<MenuItem> dataSet) {
+   public void setDataSet(List<MenuItem> dataSet) {
         this.dataSet = dataSet;
         notifyDataSetChanged();
-    }*/
+   }
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -40,8 +39,9 @@ public class SideBarMenuAdapter extends RecyclerView.Adapter<SideBarMenuAdapter.
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.icon.setImageResource(dataSet.get(position).getIcon());
-        if (holder.is_selected_icon.isSelected())
+        if (dataSet.get(position).isSelected()){
             holder.is_selected_icon.setVisibility(View.VISIBLE);
+        }
         else
             holder.is_selected_icon.setVisibility(View.INVISIBLE);
     }
@@ -60,8 +60,8 @@ public class SideBarMenuAdapter extends RecyclerView.Adapter<SideBarMenuAdapter.
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            icon = (ImageView) itemView.findViewById(R.id.home_icon);
-            is_selected_icon = (ImageView) itemView.findViewById(R.id.is_selected_icon);
+            icon = itemView.findViewById(R.id.home_icon);
+            is_selected_icon =itemView.findViewById(R.id.is_selected_icon);
         }
 
     }

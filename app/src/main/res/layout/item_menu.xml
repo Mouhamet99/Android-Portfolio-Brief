@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="48dp"
+    android:layout_height="55dp"
     android:orientation="vertical">
 
 
@@ -15,8 +15,9 @@
         android:layout_weight="1"
         android:contentDescription="@string/paragraph"
         app:srcCompat="@drawable/ic_baseline_home_24"
-        tools:ignore="VectorDrawableCompat"
-        app:tint="@color/gray_200" />
+        app:tint="@color/gray_200"
+        app:tintMode="multiply"
+        tools:ignore="VectorDrawableCompat" />
 
     <ImageView
         android:id="@+id/is_selected_icon"
@@ -24,5 +25,7 @@
         android:layout_height="8dp"
         android:layout_gravity="center_horizontal"
         android:contentDescription="@string/image"
-        android:src="@drawable/rounded_icon" />
+        android:src="@drawable/rounded_icon"
+        app:tint="@color/indigo"
+        tools:ignore="UseAppTint" />
 </LinearLayout>

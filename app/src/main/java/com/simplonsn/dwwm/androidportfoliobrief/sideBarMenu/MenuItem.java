@@ -4,6 +4,7 @@ public class MenuItem {
     private int icon, code;
     private boolean isSelected;
 
+
     public MenuItem(int icon, int code, boolean isSelected) {
         this.icon = icon;
         this.code = code;

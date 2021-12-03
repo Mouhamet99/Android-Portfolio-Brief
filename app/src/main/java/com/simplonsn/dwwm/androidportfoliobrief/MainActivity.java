@@ -1,13 +1,10 @@
 package com.simplonsn.dwwm.androidportfoliobrief;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Adapter;
 
 import com.simplonsn.dwwm.androidportfoliobrief.home.HomeSection;
 import com.simplonsn.dwwm.androidportfoliobrief.sideBarMenu.MenuItem;
