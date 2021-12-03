@@ -10,4 +10,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home_section_title">Home Section Title</string>
     <string name="image">Image Description Exemple</string>
+    <string name="about_section_title"><![CDATA[</About-me>]]></string>
+    <string name="who_am_i_subtitile">Who am I?</string>
+    <string name="who_am_i_content">A true enthusiast of new technologies My qualities: -I\'m not a genius or a prodigy -I\'m not a gifted developer / designer -I don\'t know everything about programming and design -I have too many skills to learn that I can\'t help but learn from day to day -I have a lot of skills acquired that I feel confident around my fellow developer / designer of the same generation -I know my value, I trade my time for money. My main fault: -I am a perfectionist My best Friend: Google Center of interest: -documentation on Telegram MDN FreecodeCamp ... -Motivation and video tutorial on Youtube ...</string>
 </resources>

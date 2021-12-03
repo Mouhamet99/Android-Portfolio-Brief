@@ -15,11 +15,12 @@ import java.util.List;
 public class SideBarMenuAdapter extends RecyclerView.Adapter<SideBarMenuAdapter.ViewHolder> {
     //List of data
     private List<MenuItem> dataSet ;
-
+    CallBack listener;
 
     // Constructor
-    public SideBarMenuAdapter(List<MenuItem> dataSet) {
+    public SideBarMenuAdapter(List<MenuItem> dataSet,  CallBack listener) {
         this.dataSet = dataSet;
+        this.listener = listener;
     }
 
 
@@ -55,13 +56,20 @@ public class SideBarMenuAdapter extends RecyclerView.Adapter<SideBarMenuAdapter.
     /*
     * Handle Layout of each item
     * */
-    public static  class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder {
         private final ImageView icon ,is_selected_icon;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             icon = itemView.findViewById(R.id.home_icon);
             is_selected_icon =itemView.findViewById(R.id.is_selected_icon);
+            // TODO:Add an onclick event listener to each menu item
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    listener.onSideMenuItemClick(getAdapterPosition());
+                }
+            });
         }
 
     }
