@@ -38,13 +38,17 @@ public class TechSkillsFragment extends Fragment {
         rv_tech_skills = view.findViewById(R.id.tech_skills_rv);
 
         dataTechSkills = new ArrayList<>();
-        dataTechSkills.add(new TechSkillsItem("HTML & CSS", 80));
-        dataTechSkills.add(new TechSkillsItem("JavaScript", 90));
-        dataTechSkills.add(new TechSkillsItem("PHP/Symfony", 70));
-        dataTechSkills.add(new TechSkillsItem("JAVA", 75));  dataTechSkills.add(new TechSkillsItem("HTML & CSS", 80));
-        dataTechSkills.add(new TechSkillsItem("JavaScript", 90));
-        dataTechSkills.add(new TechSkillsItem("PHP/Symfony", 70));
+        dataTechSkills.add(new TechSkillsItem("HTML & CSS", 90));
+        dataTechSkills.add(new TechSkillsItem("Framework[Tailwind CSS , Bootstrap]", 90));
+        dataTechSkills.add(new TechSkillsItem("JavaScript[AJAX, JQuery,ReactJS]", 90));
+        dataTechSkills.add(new TechSkillsItem("PHP[Symfony]", 65));
         dataTechSkills.add(new TechSkillsItem("JAVA", 75));
+        dataTechSkills.add(new TechSkillsItem("ReactJS", 60));
+        dataTechSkills.add(new TechSkillsItem("CMS[Wordpress, Joomla]", 80));
+        dataTechSkills.add(new TechSkillsItem("JAVA", 75));
+        dataTechSkills.add(new TechSkillsItem("Design[Illustrator, PhotoShop, Canva,Figma]", 95));
+        dataTechSkills.add(new TechSkillsItem("Modelling[UML, Merise]", 90));
+        dataTechSkills.add(new TechSkillsItem("Database[MySql, ORM]", 85));
 //         rv_tech_skills.setHasFixedSize(false);
         adapter = new TechSkillsAdapter(dataTechSkills);
         rv_tech_skills.setLayoutManager(new LinearLayoutManager(getContext()));
