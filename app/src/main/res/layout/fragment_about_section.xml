@@ -5,6 +5,7 @@
     android:id="@+id/about_section_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:overScrollMode="ifContentScrolls"
     tools:context=".about.AboutSection">
 
     <!-- TODO: Update blank fragment layout -->
@@ -25,7 +26,6 @@
         android:id="@+id/who_am_i"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:text="@string/who_am_i_subtitile"
         android:textSize="17sp"
@@ -38,7 +38,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
         android:lineSpacingExtra="10sp"
         android:text="@string/who_am_i_content"
         android:textSize="14sp"
@@ -46,4 +45,17 @@
         app:layout_constraintStart_toStartOf="@+id/who_am_i"
         app:layout_constraintTop_toBottomOf="@+id/who_am_i" />
 
+    <FrameLayout
+        android:id="@+id/container_tech_skills"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:minHeight="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/who_am_i_content"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="@+id/who_am_i_content"
+        app:layout_constraintTop_toBottomOf="@+id/who_am_i_content">
+
+
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,14 +9,12 @@
     <!-- TODO: Update blank fragment layout -->
 
     <TextView
-        android:textColor="@color/indigo"
         android:id="@+id/home_tiltle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
         android:text="TextView"
+        android:textColor="@color/indigo"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,8 +25,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         android:lineSpacingExtra="10sp"
         android:padding="5dp"
         android:text="@string/paragraph"
@@ -55,8 +51,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         android:lineSpacingExtra="10sp"
         android:text="@string/paragraph"
         app:layout_constraintEnd_toEndOf="parent"

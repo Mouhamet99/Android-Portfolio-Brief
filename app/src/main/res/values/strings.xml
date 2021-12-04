@@ -20,4 +20,5 @@
     <string name="placeholder_email">Enter your mail</string>
     <string name="placeholder_name">Enter your name</string>
     <string name="placeholder_message">Type your message here</string>
+    <string name="tech_skills_subtitle">Tech-Skills</string>
 </resources>
