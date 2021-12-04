@@ -13,9 +13,9 @@ public class MenuItemsList {
     public static List<MenuItem> getMenuItemsList() {
     List<MenuItem> dataSet = new ArrayList<>();
         dataSet.add(new MenuItem(R.drawable.ic_baseline_home_24, HOME_SECTION_CODE, true));
-        dataSet.add(new MenuItem(R.drawable.ic_baseline_home_24, ABOUT_SECTION_CODE, false));
-        dataSet.add(new MenuItem(R.drawable.ic_baseline_home_24, WORKS_SECTION_CODE, false));
-        dataSet.add(new MenuItem(R.drawable.ic_baseline_home_24, CONTACT_SECTION_CODE, false));
+        dataSet.add(new MenuItem(R.drawable.ic_baseline_person_24, ABOUT_SECTION_CODE, false));
+        dataSet.add(new MenuItem(R.drawable.ic_baseline_work_24, WORKS_SECTION_CODE, false));
+        dataSet.add(new MenuItem(R.drawable.ic_baseline_contact_mail_24, CONTACT_SECTION_CODE, false));
         return dataSet;
     }
 }

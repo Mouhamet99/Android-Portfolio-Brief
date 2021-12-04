@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
 import com.simplonsn.dwwm.androidportfoliobrief.about.AboutSection;
+import com.simplonsn.dwwm.androidportfoliobrief.contact.ContactSection;
 import com.simplonsn.dwwm.androidportfoliobrief.home.HomeSection;
 import com.simplonsn.dwwm.androidportfoliobrief.sideBarMenu.CallBack;
 import com.simplonsn.dwwm.androidportfoliobrief.sideBarMenu.MenuItem;
@@ -48,6 +49,9 @@ public class MainActivity extends AppCompatActivity implements CallBack {
     void setAboutFragment() {
         getSupportFragmentManager().beginTransaction().replace(R.id.container,new AboutSection()).commit();
     }
+    void setContactFragment() {
+        getSupportFragmentManager().beginTransaction().replace(R.id.container,new ContactSection()).commit();
+    }
 
 
     @Override
@@ -58,6 +62,9 @@ public class MainActivity extends AppCompatActivity implements CallBack {
             break;
             case MenuItemsList.ABOUT_SECTION_CODE:
                 setAboutFragment();
+                break;
+            case MenuItemsList.CONTACT_SECTION_CODE:
+                    setContactFragment();
                 break;
         }
         dataSet.get(selectedMenuItemIndex).setSelected(false);
