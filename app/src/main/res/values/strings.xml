@@ -18,4 +18,6 @@
     <string name="my_phone_number">+221 77 449 59 25</string>
     <string name="my_address">Dakar Keur Massar</string>
     <string name="placeholder_email">Enter your mail</string>
+    <string name="placeholder_name">Enter your name</string>
+    <string name="placeholder_message">Type your message here</string>
 </resources>

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     tools:context=".contact.ContactSection">
 
     <!-- TODO: Update blank fragment layout -->
@@ -25,8 +25,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/who_am_i_subtitile"
+        android:layout_marginTop="32dp"
+        android:text="Want Join me, It's free "
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="16dp"
         android:src="@drawable/ic_baseline_location_on_24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/who_am_i"
@@ -97,15 +97,6 @@
         app:layout_constraintBottom_toBottomOf="@+id/email_icon"
         app:layout_constraintStart_toEndOf="@+id/email_icon"
         app:layout_constraintTop_toTopOf="@+id/email_icon" />
-
-    <TextView
-        android:id="@+id/email_user_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:text="Email"
-        app:layout_constraintStart_toStartOf="@id/who_am_i"
-        app:layout_constraintTop_toBottomOf="@+id/email_icon" />
     <!--
     <EditText
         android:id="@+id/editTextTextEmailUser"
@@ -119,6 +110,7 @@
         app:layout_constraintTop_toBottomOf="@id/email_user_label" />
     -->
 
+    <!--
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
@@ -139,6 +131,7 @@
             android:inputType="text"
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
+-->
 
 
     <!--this is the filled layout box for the edit text-->
@@ -150,34 +143,102 @@
 
     <!--text view which previews the entered data by user-->
 
-    <Button
-        android:id="@+id/submit_button"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/name_user_label"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="53dp"
-        android:text="Submit"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        android:layout_marginTop="30dp"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="@id/who_am_i"
+        app:layout_constraintTop_toBottomOf="@+id/email_icon" />
+
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/editTextTextUserName"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="6dp"
         android:layout_marginEnd="16dp"
+        android:autofillHints="username"
         android:background="@drawable/border"
         android:ems="10"
-        android:autofillHints="emailAddress"
-        android:inputType="textEmailAddress"
-        android:hint="@string/placeholder_email"
+        android:hint="@string/placeholder_name"
+        android:inputType="textPersonName"
         android:padding="10dp"
-        android:textCursorDrawable="@null"
         android:textColor="@color/gray_900"
+        android:textCursorDrawable="@null"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+        app:layout_constraintStart_toStartOf="@id/name_user_label"
+        app:layout_constraintTop_toBottomOf="@+id/name_user_label" />
 
+    <TextView
+        android:id="@+id/email_user_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Email"
+        app:layout_constraintStart_toStartOf="@id/name_user_label"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextUserName" />
+
+
+    <EditText
+        android:id="@+id/editTextTextUserMail"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="@string/placeholder_email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@color/gray_900"
+        android:textCursorDrawable="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/email_user_label"
+        app:layout_constraintTop_toBottomOf="@+id/email_user_label" />
+
+
+    <TextView
+        android:id="@+id/message_user_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Message"
+        app:layout_constraintStart_toStartOf="@id/editTextTextUserMail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextUserMail" />
+
+
+    <EditText
+        android:id="@+id/editTextTextUserMessage"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="message"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/placeholder_message"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="@color/gray_900"
+        android:textCursorDrawable="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/message_user_label"
+        app:layout_constraintTop_toBottomOf="@+id/message_user_label" />
+
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:layout_marginTop="18dp"
+        android:paddingHorizontal="40dp"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextUserMessage"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextUserMessage"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
