@@ -9,52 +9,57 @@
     <!-- TODO: Update blank fragment layout -->
 
     <TextView
-        android:id="@+id/home_tiltle"
+        android:id="@+id/subject"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
+        android:layout_marginTop="32dp"
+        android:text="I am"
         android:textColor="@color/indigo"
-        android:textSize="20sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/home_paragraph"
+        android:id="@+id/my_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:lineSpacingExtra="10sp"
         android:padding="5dp"
-        android:text="@string/paragraph"
-        android:textSize="14sp"
+        android:text="@string/name"
+        android:textColor="@color/white"
+        android:textSize="44sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/home_tiltle"
-        app:layout_constraintTop_toBottomOf="@+id/home_tiltle" />
+        app:layout_constraintStart_toStartOf="@+id/subject"
+        app:layout_constraintTop_toBottomOf="@+id/subject" />
 
     <TextView
-        android:id="@+id/about_title"
-        android:textColor="@color/indigo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/about_me"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/home_paragraph"
-        app:layout_constraintTop_toBottomOf="@+id/home_paragraph" />
-
-    <TextView
-        android:id="@+id/about_paragraph"
+        android:id="@+id/profession"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:lineSpacingExtra="10sp"
-        android:text="@string/paragraph"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/backgroun_text"
+        android:padding="5dp"
+        android:text="@string/prefession"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/about_title"
-        app:layout_constraintTop_toBottomOf="@+id/about_title" />
+        app:layout_constraintStart_toStartOf="@+id/my_name"
+        app:layout_constraintTop_toBottomOf="@+id/my_name" />
+
+    <ImageView
+        android:id="@+id/banner_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="0dp"
+        android:src="@drawable/photo_dieye3v2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profession"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
