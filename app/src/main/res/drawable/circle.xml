@@ -2,10 +2,13 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape
+
             android:shape="ring"
-            android:thicknessRatio="16"
+            android:thicknessRatio="30"
             android:useLevel="false">
             <solid android:color="#DDD" />
+              <size android:width="100dp"
+                        android:height="100dp" />
         </shape>
     </item>
     <item>
@@ -14,8 +17,11 @@
             android:toDegrees="270">
             <shape
                 android:shape="ring"
-                android:thicknessRatio="16"
+
+                android:thicknessRatio="30"
                 android:useLevel="true">
+                  <size android:width="100dp"
+                        android:height="100dp" />
                 <gradient
                     android:endColor="@color/colorPrimary"
                     android:startColor="@color/colorAccent"
