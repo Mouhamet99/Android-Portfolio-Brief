@@ -14,15 +14,14 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
 import com.simplonsn.dwwm.androidportfoliobrief.R;
+import com.simplonsn.dwwm.androidportfoliobrief.about.softskills.SoftSkillsFragment;
 import com.simplonsn.dwwm.androidportfoliobrief.about.techskills.TechSkillsFragment;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link AboutSection#newInstance} factory method to
  * create an instance of this fragment.
  */
 public class AboutSection extends Fragment {
-    RecyclerView recyclerView;
 
     public AboutSection() {
         // Required empty public constructor
@@ -31,9 +30,14 @@ public class AboutSection extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Fragment techSkillFragment = new TechSkillsFragment();
+        //TODO: Inflate techskills fragment inside their appropriate container
+    /*    Fragment techSkillFragment = new TechSkillsFragment();
         FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
-        transaction.add(R.id.container_tech_skills, techSkillFragment).commit();
+        transaction.add(R.id.container_tech_skills, techSkillFragment).commit();*/
+        //TODO: Inflate softskills fragment inside their appropriate container
+        Fragment softSkillFragment = new SoftSkillsFragment();
+        FragmentTransaction transaction2 = getChildFragmentManager().beginTransaction();
+        transaction2.add(R.id.container_soft_skills, softSkillFragment).commit();
 
     }
 
@@ -42,14 +46,6 @@ public class AboutSection extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_about_section, container, false);
-
-        // Add the following lines to create RecyclerView
-
-//        recyclerView = view.findViewById(R.id.tech_skills_rv);
-//        recyclerView.setHasFixedSize(true);
-//        recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
-//        recyclerView.setAdapter(new RandomNumListAdapter(1234));
-
         return view;
     }
 }

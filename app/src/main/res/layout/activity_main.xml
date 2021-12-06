@@ -49,8 +49,9 @@
         android:layout_height="48dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_icon"
         android:contentDescription="@string/paragraph"
-        android:src="@drawable/freecodecamp"
+        android:src="@drawable/dieye_profil"
 
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
