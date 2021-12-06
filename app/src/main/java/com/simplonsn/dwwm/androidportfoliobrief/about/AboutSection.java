@@ -31,14 +31,14 @@ public class AboutSection extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //TODO: Inflate techskills fragment inside their appropriate container
-    /*    Fragment techSkillFragment = new TechSkillsFragment();
+        Fragment techSkillFragment = new TechSkillsFragment();
         FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
-        transaction.add(R.id.container_tech_skills, techSkillFragment).commit();*/
+        transaction.add(R.id.container_tech_skills, techSkillFragment).commit();
+
         //TODO: Inflate softskills fragment inside their appropriate container
         Fragment softSkillFragment = new SoftSkillsFragment();
         FragmentTransaction transaction2 = getChildFragmentManager().beginTransaction();
         transaction2.add(R.id.container_soft_skills, softSkillFragment).commit();
-
     }
 
     @Override
