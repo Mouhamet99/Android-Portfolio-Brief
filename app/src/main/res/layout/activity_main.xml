@@ -23,16 +23,18 @@
 
     </FrameLayout>-->
     <ScrollView
-        android:id="@+id/a"
+        android:id="@+id/scrollViewContainer"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginRight="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toRightOf="@+id/rv_side_bar_menu"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
 
         <FrameLayout
@@ -41,8 +43,9 @@
             android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
             android:minHeight="700dp"
-            android:orientation="vertical" ></FrameLayout>
+            android:orientation="vertical"></FrameLayout>
     </ScrollView>
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="48dp"
