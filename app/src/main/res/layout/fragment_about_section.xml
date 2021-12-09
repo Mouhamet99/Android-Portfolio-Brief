@@ -5,6 +5,7 @@
     android:id="@+id/about_section_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:overScrollMode="ifContentScrolls"
     tools:context=".about.AboutSection">
 
     <!-- TODO: Update blank fragment layout -->
@@ -17,20 +18,19 @@
         android:textColor="@color/indigo"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/who_am_i"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:text="@string/who_am_i_subtitile"
         android:textSize="17sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/about_section_title" />
 
     <TextView
@@ -38,14 +38,33 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
-        android:justificationMode="inter_word"
-        android:lineSpacingExtra="10dp"
+        android:lineSpacingExtra="10sp"
         android:text="@string/who_am_i_content"
         android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/who_am_i"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/who_am_i"
         app:layout_constraintTop_toBottomOf="@+id/who_am_i" />
+
+    <FrameLayout
+        android:id="@+id/container_tech_skills"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:minHeight="100dp"
+        app:layout_constraintRight_toRightOf="@+id/who_am_i_content"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintLeft_toLeftOf="@+id/who_am_i_content"
+        app:layout_constraintTop_toBottomOf="@+id/who_am_i_content"/>
+        
+    <FrameLayout
+        android:id="@+id/container_soft_skills"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:minHeight="100dp"
+        app:layout_constraintRight_toRightOf="@+id/who_am_i_content"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintLeft_toLeftOf="@+id/who_am_i_content"
+        app:layout_constraintTop_toBottomOf="@+id/container_tech_skills"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

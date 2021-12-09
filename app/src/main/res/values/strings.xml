@@ -20,4 +20,8 @@
     <string name="placeholder_email">Enter your mail</string>
     <string name="placeholder_name">Enter your name</string>
     <string name="placeholder_message">Type your message here</string>
+    <string name="tech_skills_subtitle">Tech-Skills</string>
+    <string name="soft_skills_subtitle">Soft Skills</string>
+    <string name="name">Mouhamet Dieye</string>
+    <string name="prefession">FullStack Developper And Designer</string>
 </resources>

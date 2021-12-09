@@ -236,7 +236,12 @@
         android:layout_height="wrap_content"
         android:text="Send"
         android:layout_marginTop="18dp"
-        android:paddingHorizontal="40dp"
+        android:paddingHorizontal="20dp"
+        app:icon="@drawable/ic_baseline_send_24"
+        app:iconGravity="textEnd"
+        app:iconPadding="20dp"
+        app:elevation="5dp"
+        app:backgroundTint="@color/indigo"
         app:layout_constraintStart_toStartOf="@+id/editTextTextUserMessage"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextUserMessage"
         />

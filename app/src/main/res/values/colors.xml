@@ -10,5 +10,8 @@
     <color name="indigo">#6071FC</color>
     <color name="gray_200">#E2E8F0</color>
     <color name="gray_900">#1A202C</color>
+    <color name="colorPrimary">#eeeeee</color>
+    <color name="colorPrimaryDark">#1A202C</color>
+    <color name="colorAccent">#1A202C</color>
 
 </resources>
